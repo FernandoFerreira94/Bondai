@@ -1,0 +1,164 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    border: solid 1px red;
+}
+
+//COR
+$btn: #00b288b5;
+$btn2: #00b288f2;
+$preco: #4c4d5f;
+$fundoDiv: rgba(152, 226, 226, 0.134);
+$new: #f8db62;
+$borda: 1px solid transparent;
+
+// GLOBAL
+
+// LISTA
+ul {
+    list-style-type: none;
+}
+// BOTAO
+button {
+    font-size: 12px;
+    font-weight: 800;
+    background: $btn;
+    color: #fff;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+button:hover {
+    background-color: $btn2;
+}
+
+//CORPO
+body {
+    height: 100dvb;
+    margin-bottom: 1500px;
+}
+
+// LINK
+a {
+    text-decoration: none;
+    color: $preco;
+    font-size: 18px;
+}
+
+//FUNDO BG
+.fundoBg {
+    width: 65%;
+    margin-left: auto;
+    height: 100%;
+    transform: rotate(-33deg);
+    position: absolute;
+    top:  -25%;
+    right: -5%;
+    background-color: $fundoDiv;
+    z-index: -5;    
+    overflow: hidden;
+    border:$borda;
+}
+
+
+// Header 
+nav {
+    position: fixed;
+    width: 100% ;
+    display:  flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    border: 1px solid blue;
+    z-index: 2;
+    background: #fff;
+}
+
+.logo {
+    border:$borda;
+
+}
+
+.menu {
+    display: flex;
+    font-size: 20px;
+    a {
+        margin-right: 20px;
+        text-decoration: none;
+    }
+
+    .drop {
+        padding: 50px  ;
+        width: 400px;
+        h5 {
+            margin-bottom: 8px;
+            font-size: 25px;
+        }
+        p {
+            font-size: 19px;
+        }
+        hr {
+            margin: 50px 0;
+        }
+    }
+
+    .lista {
+        width: 350px;
+        font-size: 20px;
+        li {
+            padding: 20px 0 20px 30px; 
+            transition: all 0.1s;
+            cursor: pointer;
+        }
+        li:hover {
+            background: rgb(240, 240, 240, 0.7);
+        }
+
+    
+    }
+ 
+    
+    /* Estilo para exibir o dropdown ao passar o mouse */
+    .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+
+}
+  
+
+.login {
+    display: flex;
+    gap: 30px;
+    border:$borda;
+
+    button {
+        padding: 13px 26px;
+    }
+
+    #btnLogin {
+        color: $btn;
+        background-color: #fff;
+        border: 1px solid $btn;
+        transition: all 0.1s;
+    }
+
+    #btnLogin:hover {
+        background-color: $btn2;
+        color: #fff;
+    }
+}
+
+//MAIN
+main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}

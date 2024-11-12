@@ -1,0 +1,149 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div {
+  border: solid 1px red;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  font-size: 12px;
+  font-weight: 800;
+  background: rgba(0, 178, 136, 0.7098039216);
+  color: #fff;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+button:hover {
+  background-color: rgba(0, 178, 136, 0.9490196078);
+}
+
+body {
+  height: 100dvb;
+  margin-bottom: 1500px;
+}
+
+a {
+  text-decoration: none;
+  color: #4c4d5f;
+  font-size: 18px;
+}
+
+.fundoBg {
+  width: 65%;
+  margin-left: auto;
+  height: 100%;
+  -webkit-transform: rotate(-33deg);
+          transform: rotate(-33deg);
+  position: absolute;
+  top: -25%;
+  right: -5%;
+  background-color: rgba(152, 226, 226, 0.134);
+  z-index: -5;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0;
+  border: 1px solid blue;
+  z-index: 2;
+  background: #fff;
+}
+
+.logo {
+  border: 1px solid transparent;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  /* Estilo para exibir o dropdown ao passar o mouse */
+}
+.menu a {
+  margin-right: 20px;
+  text-decoration: none;
+}
+.menu .drop {
+  padding: 50px;
+  width: 400px;
+}
+.menu .drop h5 {
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+.menu .drop p {
+  font-size: 19px;
+}
+.menu .drop hr {
+  margin: 50px 0;
+}
+.menu .lista {
+  width: 350px;
+  font-size: 20px;
+}
+.menu .lista li {
+  padding: 20px 0 20px 30px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+.menu .lista li:hover {
+  background: rgba(240, 240, 240, 0.7);
+}
+.menu .nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  border: 1px solid transparent;
+}
+.login button {
+  padding: 13px 26px;
+}
+.login #btnLogin {
+  color: rgba(0, 178, 136, 0.7098039216);
+  background-color: #fff;
+  border: 1px solid rgba(0, 178, 136, 0.7098039216);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.login #btnLogin:hover {
+  background-color: rgba(0, 178, 136, 0.9490196078);
+  color: #fff;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
