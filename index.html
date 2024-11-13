@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./Stylecss/style.css">
+    <!--Css-->
+    <link rel="stylesheet" href="./Stylecss/Global.css">
+    <link rel="stylesheet" href="./Stylecss/Tags.css">
+
     <title>Bondai</title>
+
 </head>
 
 <body>
@@ -22,8 +27,8 @@
             <div class="menu">
                 <ul class="nav nav-pills">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-expanded="false">Poduct</a>
+                        <a class="nav-link dropdown-toggle text-dark fs-5" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-expanded="false">Poduct</a>
                         <ul class="dropdown-menu drop">
                             <h5>Bonsai Workflow</h5>
                             <p>Look professina, win more clients and manage your business from one piece</p>
@@ -37,10 +42,11 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-expanded="false">Templates</a>
+                        <a class="nav-link dropdown-toggle text-dark fs-5" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-expanded="false">Templates</a>
                         <ul class="dropdown-menu lista">
-                            <li><img
+                            <li>
+                                <img
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKJJREFUSEvtleERQDAMhV83YRNGMYlRjMIoNkHu1J1W20SEP/pT037Ji+Y5GC9nfD84gGVPIoxNfT/l/DqgATAAqG5KNwPoAEz+fFjBuG0SRLMIUqcAXlcNgM4eid9qXIYeNf5zAFcyn6i4AnOAtNniCswBVxLlXr+4AnOAuUQ/IDIcloloZtET45q8oE2Na/KCXuEJRcOR/jXFeI4nFy/JBaxc2i0ZB5qkcQAAAABJRU5ErkJggg==" />
                                 <a href="#">Contract Templates</a>
                             </li>
@@ -63,10 +69,10 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Pricing</a>
+                        <a class="nav-link text-dark fs-5" href="#">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Reviews</a>
+                        <a class="nav-link text-dark fs-5" href="#">Reviews</a>
                     </li>
                 </ul>
             </div>
@@ -79,6 +85,103 @@
     <main>
         <div class="fundoBg"></div>
 
+        <div class="title">
+            <h1 class="fs-1">Plans & Pricing</h1>
+
+            <div class="month">
+                <Label class="fs-3">Monthys:   <input class="form-check-input" type="checkbox" value=""
+                        aria-label="Checkbox for following text input" id="checkBox" onclick="checkBox(this)">
+                    Yearly</Label>
+                <p class="month-text fs-5 text-success">2 Month free</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="col">
+                <h1>Starter</h1>
+                <small>Ideal for freelance and contractors just starting out</small>
+                <div class="preco">
+                    <span class="cifrao">$</span>
+                    <span class="num">17</span>
+                    <div class="month-text">
+                        <span class="month-num">/MONTH</span>
+                    </div>
+                </div>
+                <span class="bill">Billed yearly</span>
+
+                <div class="list">
+                    <ul class="checklist">
+                        <li>All Templates</li>
+                        <li>Unimited Client & Project</li>
+                        <li>Invoicing & Payments</li>
+                        <li>Proposais & Contacts</li>
+                        <li>Task & Time Tracking</li>
+                        <li>Client CRM</li>
+                        <li>Expense Tracking</li>
+                        <li>Up to 5 Project Collaborators</li>
+                    </ul>
+                </div>
+                <div class="btn-free">
+                    <button>start free</button>
+                </div>
+            </div>
+            <div class="col">
+                <h1>Starter</h1>
+                <small>Ideal for freelance and contractors just starting out</small>
+                <div class="preco">
+                    <span class="cifrao">$</span>
+                    <span class="num">17</span>
+                    <div class="month-text">
+                        <span class="month-num">/MONTH</span>
+                    </div>
+                </div>
+                <span class="bill">Billed yearly</span>
+
+                <div class="list">
+                    <ul class="checklist">
+                        <li>All Templates</li>
+                        <li>Unimited Client & Project</li>
+                        <li>Invoicing & Payments</li>
+                        <li>Proposais & Contacts</li>
+                        <li>Task & Time Tracking</li>
+                        <li>Client CRM</li>
+                        <li>Expense Tracking</li>
+                        <li>Up to 5 Project Collaborators</li>
+                    </ul>
+                </div>
+                <div class="btn-free">
+                    <button>start free</button>
+                </div>
+            </div>
+            <div class="col">
+                <h1>Starter</h1>
+                <small>Ideal for freelance and contractors just starting out</small>
+                <div class="preco">
+                    <span class="cifrao">$</span>
+                    <span class="num">17</span>
+                    <div class="month-text">
+                        <span class="month-num">/MONTH</span>
+                    </div>
+                </div>
+                <span class="bill">Billed yearly</span>
+
+                <div class="list">
+                    <ul class="checklist">
+                        <li>All Templates</li>
+                        <li>Unimited Client & Project</li>
+                        <li>Invoicing & Payments</li>
+                        <li>Proposais & Contacts</li>
+                        <li>Task & Time Tracking</li>
+                        <li>Client CRM</li>
+                        <li>Expense Tracking</li>
+                        <li>Up to 5 Project Collaborators</li>
+                    </ul>
+                </div>
+                <div class="btn-free">
+                    <button>start free</button>
+                </div>
+            </div>
+        </div>
     </main>
 
 

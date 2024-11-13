@@ -1,0 +1,215 @@
+
+//COR
+$btn: #00b288de;
+$btn2: #00b288;
+$preco: #4c4d5f;
+$fundoDiv: rgba(133, 228, 228, 0.085);
+$new: #f8db62;
+$borda: 1px solid transparent;
+
+
+
+//Logo
+.logo {
+    border:$borda;
+}
+
+.fundoBg {
+    width: 85%;
+    max-width: 100vw; /* Adiciona esta linha */
+    height: 100%;
+    transform: rotate(-25deg);
+    position: absolute;
+    top:  -30%;
+    right: -10%;
+    background-color: $fundoDiv;
+    z-index: -5;    
+    overflow: hidden;
+    border: $borda;
+}s
+
+
+//Menu
+
+.menu {
+    display: flex;
+    font-size: 20px;
+    a {
+        margin-right: 20px;
+        text-decoration: none;
+    }
+
+    .drop {
+        padding: 50px  ;
+        width: 400px;
+        h5 {
+            margin-bottom: 8px;
+            font-size: 25px;
+        }
+        p {
+            font-size: 19px;
+        }
+        hr {
+            margin: 50px 0;
+        }
+    }
+
+    .lista {
+        width: 350px;
+        font-size: 20px;
+        li {
+            padding: 20px 0 20px 30px; 
+            transition: all 0.1s;
+            cursor: pointer;
+        }
+        li:hover {
+            background: rgb(240, 240, 240, 0.7);
+        }
+    }
+    /* Estilo para exibir o dropdown ao passar o mouse */
+    .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+}
+ 
+// div Login
+.login {
+    display: flex;
+    gap: 30px;
+    border:$borda;
+
+    button {
+        padding: 12px 30px;
+    }
+
+    #btnLogin {
+        color: $btn;
+        background-color: #fff;
+        border: 1px solid $btn;
+        transition: all 0.1s;
+    }
+
+    #btnLogin:hover {
+        background-color: $btn2;
+        color: #fff;
+    }
+}
+
+// Main 
+//Titulo
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    padding-top: 175px;
+    h1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+    .month {
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+
+    .month-text {
+        position: absolute;
+        top: -40px;
+        right: -25px;
+    }
+}
+
+// conteudo
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.col {
+    width: 100%;
+    background: #fff;
+    padding: 30px 40px;
+    border: 1px solid rgb(116, 116, 116);
+ 
+    h1 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .preco{
+        display: flex;
+    }
+
+    small {
+        font-size: 18px;
+    }
+  
+
+    .cifrao {
+        font-size: 35px;
+        margin-right: 10px;
+    }
+
+    .num {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    .month-text {
+        display: flex;
+        align-items: end;
+        margin-left: 5px;
+
+        .month-num {
+            font-size: 28px;
+        }
+
+    }
+
+    .bill {
+        font-size: 21px;
+        display: flex;
+        justify-content: end;
+        margin-right: 10px;
+        border-bottom: 3px solid green;
+        width: 100%;
+    }
+    .checklist {
+        padding: 0;
+        margin-top: 30px;
+      
+        li {
+            position: relative; /* Permite posicionamento absoluto do ícone */
+            padding-left: 24px; /* Espaço para o ícone de check */
+            margin-bottom: 15px; /* Espaço entre os itens */
+            font-size: 18px;
+        }   
+        
+         li::before {
+            content: "\2713"; /* Código Unicode para o ícone de check */
+            position: absolute;
+            left: 0;
+            color: $btn; /* Cor do ícone de check */
+            font-weight: bold;
+            font-size: 22px;
+        }
+    
+        
+    }
+    .btn-free {
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+        button {
+            width: 80%;
+            padding: 20px 30px;
+            font-size: 18px;
+        }
+    }
+}
+
+
