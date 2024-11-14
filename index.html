@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--Css-->
     <link rel="stylesheet" href="./Stylecss/Global.css">
-    <link rel="stylesheet" href="./Stylecss/Tags.css">
+    <link rel="stylesheet" href="./Stylecss/Header.css">
+    <link rel="stylesheet" href="./Stylecss/Main.css">
+    <link rel="stylesheet" href="./Stylecss/Footer.css">
 
     <title>Bondai</title>
 
@@ -26,56 +28,56 @@
             </div>
             <div class="menu">
                 <ul class="nav nav-pills">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark fs-5" data-bs-toggle="dropdown" href="#"
-                            role="button" aria-expanded="false">Poduct</a>
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle text-dark fs-5"
+                            data-toggle="dropdown" href="#" role="button" aria-expanded="false">Product</a>
                         <ul class="dropdown-menu drop">
-                            <h5>Bonsai Workflow</h5>
-                            <p>Look professina, win more clients and manage your business from one piece</p>
-                            <hr>
-                            <h5>Bonsai Taz</h5>
-                            <p>Trach expenses, maximize tax write-offs, and estimate taxes without the headache</p>
-                            <hr>
-                            <h5>Bonsai Cash</h5>
-                            <p>Bonsai's all-in-one financial hub: No fees and lightninh fast payouts</p>
-                            <hr>
+                            <li>
+                                <h5>Bonsai Workflow</h5>
+                                <p>Look professional, win more clients, and manage your business from one place</p>
+                                <hr>
+                            </li>
+                            <li>
+                                <h5>Bonsai Tax</h5>
+                                <p>Track expenses, maximize tax write-offs, and estimate taxes without the headache</p>
+                                <hr>
+                            </li>
+                            <li>
+                                <h5>Bonsai Cash</h5>
+                                <p>Bonsai's all-in-one financial hub: No fees and lightning fast payouts</p>
+                                <hr>
+                            </li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark fs-5" data-bs-toggle="dropdown" href="#"
-                            role="button" aria-expanded="false">Templates</a>
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle text-dark fs-5"
+                            data-toggle="dropdown" href="#" role="button" aria-expanded="false">Templates</a>
                         <ul class="dropdown-menu lista">
-                            <li>
-                                <img
+                            <li> <img
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKJJREFUSEvtleERQDAMhV83YRNGMYlRjMIoNkHu1J1W20SEP/pT037Ji+Y5GC9nfD84gGVPIoxNfT/l/DqgATAAqG5KNwPoAEz+fFjBuG0SRLMIUqcAXlcNgM4eid9qXIYeNf5zAFcyn6i4AnOAtNniCswBVxLlXr+4AnOAuUQ/IDIcloloZtET45q8oE2Na/KCXuEJRcOR/jXFeI4nFy/JBaxc2i0ZB5qkcQAAAABJRU5ErkJggg==" />
                                 <a href="#">Contract Templates</a>
                             </li>
-                            <li><img
+                            <li> <img
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKJJREFUSEvtleERQDAMhV83YRNGMYlRjMIoNkHu1J1W20SEP/pT037Ji+Y5GC9nfD84gGVPIoxNfT/l/DqgATAAqG5KNwPoAEz+fFjBuG0SRLMIUqcAXlcNgM4eid9qXIYeNf5zAFcyn6i4AnOAtNniCswBVxLlXr+4AnOAuUQ/IDIcloloZtET45q8oE2Na/KCXuEJRcOR/jXFeI4nFy/JBaxc2i0ZB5qkcQAAAABJRU5ErkJggg==" />
                                 <a href="#">Proposal Template</a>
                             </li>
-                            <li><img
+                            <li> <img
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKJJREFUSEvtleERQDAMhV83YRNGMYlRjMIoNkHu1J1W20SEP/pT037Ji+Y5GC9nfD84gGVPIoxNfT/l/DqgATAAqG5KNwPoAEz+fFjBuG0SRLMIUqcAXlcNgM4eid9qXIYeNf5zAFcyn6i4AnOAtNniCswBVxLlXr+4AnOAuUQ/IDIcloloZtET45q8oE2Na/KCXuEJRcOR/jXFeI4nFy/JBaxc2i0ZB5qkcQAAAABJRU5ErkJggg==" />
-                                <a href="#">Invoice Templates </a>
+                                <a href="#">Invoice Templates</a>
                             </li>
-                            <li><img
+                            <li> <img
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKJJREFUSEvtleERQDAMhV83YRNGMYlRjMIoNkHu1J1W20SEP/pT037Ji+Y5GC9nfD84gGVPIoxNfT/l/DqgATAAqG5KNwPoAEz+fFjBuG0SRLMIUqcAXlcNgM4eid9qXIYeNf5zAFcyn6i4AnOAtNniCswBVxLlXr+4AnOAuUQ/IDIcloloZtET45q8oE2Na/KCXuEJRcOR/jXFeI4nFy/JBaxc2i0ZB5qkcQAAAABJRU5ErkJggg==" />
                                 <a href="#">Agreement Templates</a>
                             </li>
-                            <li><img
+                            <li> <img
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKJJREFUSEvtleERQDAMhV83YRNGMYlRjMIoNkHu1J1W20SEP/pT037Ji+Y5GC9nfD84gGVPIoxNfT/l/DqgATAAqG5KNwPoAEz+fFjBuG0SRLMIUqcAXlcNgM4eid9qXIYeNf5zAFcyn6i4AnOAtNniCswBVxLlXr+4AnOAuUQ/IDIcloloZtET45q8oE2Na/KCXuEJRcOR/jXFeI4nFy/JBaxc2i0ZB5qkcQAAAABJRU5ErkJggg==" />
                                 <a href="#">Quote Templates</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fs-5" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fs-5" href="#">Reviews</a>
-                    </li>
+                    <li class="nav-item"> <a class="nav-link text-dark fs-5" href="#">Pricing</a> </li>
+                    <li class="nav-item"> <a class="nav-link text-dark fs-5" href="#">Reviews</a> </li>
                 </ul>
             </div>
+
             <div class="login">
                 <button id="btnLogin">log in</button>
                 <button>start free</button>
@@ -89,7 +91,7 @@
             <h1 class="fs-1">Plans & Pricing</h1>
 
             <div class="month">
-                <Label class="fs-3">Monthys:   <input class="form-check-input" type="checkbox" value=""
+                <Label class="fs-3">Monthy:   <input class="form-check-input" type="checkbox" value=""
                         aria-label="Checkbox for following text input" id="checkBox" onclick="checkBox(this)">
                     Yearly</Label>
                 <p class="month-text fs-5 text-success">2 Month free</p>
@@ -97,7 +99,8 @@
         </div>
 
         <div class="container">
-            <div class="col">
+            <!-- Coluna 1-->
+            <div class="col col1">
                 <h1>Starter</h1>
                 <small>Ideal for freelance and contractors just starting out</small>
                 <div class="preco">
@@ -125,12 +128,14 @@
                     <button>start free</button>
                 </div>
             </div>
-            <div class="col">
-                <h1>Starter</h1>
-                <small>Ideal for freelance and contractors just starting out</small>
+
+            <!-- Coluna 2-->
+            <div class="col col2">
+                <h1>Professional</h1>
+                <small>Everything a growing independent business needs to thrive.</small>
                 <div class="preco">
                     <span class="cifrao">$</span>
-                    <span class="num">17</span>
+                    <span class="num">32</span>
                     <div class="month-text">
                         <span class="month-num">/MONTH</span>
                     </div>
@@ -139,26 +144,29 @@
 
                 <div class="list">
                     <ul class="checklist">
-                        <li>All Templates</li>
-                        <li>Unimited Client & Project</li>
-                        <li>Invoicing & Payments</li>
+                        <li>Everything in Starter plus...</li>
+                        <li>Custom Branding</li>
+                        <li>Forms & Questionnaires</li>
                         <li>Proposais & Contacts</li>
-                        <li>Task & Time Tracking</li>
-                        <li>Client CRM</li>
-                        <li>Expense Tracking</li>
-                        <li>Up to 5 Project Collaborators</li>
+                        <li>Workflow Automations</li>
+                        <li>Client Portal</li>
+                        <li>Calendly Integration</li>
+                        <li>Zapier Integration</li>
+                        <li>Up to 15 Project Collaborators</li>
                     </ul>
                 </div>
                 <div class="btn-free">
                     <button>start free</button>
                 </div>
             </div>
-            <div class="col">
-                <h1>Starter</h1>
-                <small>Ideal for freelance and contractors just starting out</small>
+
+            <!-- Coluna 3-->
+            <div class="col col3">
+                <h1>Business</h1>
+                <small>The perfect package for small businesses and agencies.</small>
                 <div class="preco">
                     <span class="cifrao">$</span>
-                    <span class="num">17</span>
+                    <span class="num">52</span>
                     <div class="month-text">
                         <span class="month-num">/MONTH</span>
                     </div>
@@ -167,25 +175,162 @@
 
                 <div class="list">
                     <ul class="checklist">
-                        <li>All Templates</li>
-                        <li>Unimited Client & Project</li>
-                        <li>Invoicing & Payments</li>
-                        <li>Proposais & Contacts</li>
-                        <li>Task & Time Tracking</li>
-                        <li>Client CRM</li>
-                        <li>Expense Tracking</li>
-                        <li>Up to 5 Project Collaborators</li>
-                    </ul>
+                        <li>Everything in Starter and Professional plus...</li>
+                        <li>Subcontractor Management</li>
+                        <li>Hiring Agreement Templates (1099 contracts)</li>
+                        <li>Subcontractor Onboarding</li>
+                        <li>Talent Pool</li>
+                        <li>3 Team Seats (additional seats $9/month)</li>
+                        <li>Accountant Access</li>
+                        <li>Connect Multiple Bank Accounts</li>
+                        <li>Unlimited Subcontractors</li>
+                        <li>Unlimited Project Collaborators</li>
                 </div>
                 <div class="btn-free">
                     <button>start free</button>
                 </div>
             </div>
         </div>
+        <h1 class="text-custom">Customize your worflow with add-ons</h1>
+
+        <!-- Planos e valores-->
+        <div class="planos">
+            <!--Plano 1-->
+            <div class="row-Plano">
+                <div class="info-plano">
+                    <h4>Accounting & Tax Assistant</h4>
+                    <p>Manage your freelance finances and always be ready for tax season with easy-to-use accounting and
+                        tax tools.</p>
+                    <a href="#">LEARN MORE <span> ></span></a>
+                </div>
+
+                <div class="valor-plano">
+                    <span>$100</span>
+                    <small>/YEAR</small>
+                </div>
+            </div>
+
+            <!--Plano 2-->
+            <div class="row-Plano">
+                <div class="info-plano">
+                    <h4>Partners</h4>
+                    <p>Invite other users for full account access and company management.</p>
+                </div>
+
+                <div class="valor-plano">
+                    <span>$90</span>
+                    <small>/YEAR</small>
+                </div>
+            </div>
+
+            <!--Plano 3-->
+            <div class="row-Plano">
+                <div class="info-plano">
+                    <h4>Collaborators</h4>
+                    <p>Invite other users to specific projects for limited access and functionality.</p>
+                </div>
+
+                <div class="valor-plano">
+                    <p>Free</p>
+                </div>
+            </div>
+        </div>
+
+        <!--DIV BUSINESS-->
+        <div class="business">
+            <h1>It's <span>your </span>Business. <br>
+                We're here to help it grow.</h1>
+            <button>start free</button>
+        </div>
+
+        <!--DIV FREQUENTLY-->
+        <div class="frequently">
+            <nav class="navbar navbar-expand-lg">
+                <div class="collapse" id="navbarSupportedContent">
+                    <ul class="navbar">
+                        <li class="nav-item w-100">
+                            <a class="nav-link dropdown-toggle fs-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                How does the free trial work?
+                            </a>
+                            <ul class="dropdown-menu w-100">
+                                <li>
+                                    <p>When you start your trial with Bonsai you'll receive full, unlimited access to
+                                        all of Bonsai's Workflow or Workflow Plus Features! You will need to enter your
+                                        credit card information to begin your trial, but don't worry - we won't charge
+                                        you anything until the subscription ends! If you wish to cancel at any time
+                                        during the trial period, you can do so through your Subscriptions Settings Page.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar">
+                        <li class="nav-item w-100">
+                            <a class="nav-link dropdown-toggle fs-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                What is included in the subscription?
+                            </a>
+                            <ul class="dropdown-menu w-100">
+                                <li>
+                                    <p>The subscription includes access to all premium features, regular updates, and
+                                        dedicated customer support. You can explore a wide range of tools designed to
+                                        enhance your productivity and streamline your workflow.</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar">
+                        <li class="nav-item w-100">
+                            <a class="nav-link dropdown-toggle fs-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                How can I manage my subscription?
+                            </a>
+                            <ul class="dropdown-menu w-100">
+                                <li>
+                                    <p>You can manage your subscription through the Subscription Settings Page, where
+                                        you can update your payment information, change your plan, or cancel your
+                                        subscription at any time. Our support team is always available to assist you
+                                        with any questions.</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar">
+                        <li class="nav-item w-100">
+                            <a class="nav-link dropdown-toggle fs-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                What payment methods are accepted?
+                            </a>
+                            <ul class="dropdown-menu w-100">
+                                <li>
+                                    <p>We accept a variety of payment methods including credit cards, debit cards, and
+                                        PayPal. You can choose the most convenient option for you during the checkout
+                                        process. If you have any issues with payment, please contact our support team
+                                        for assistance.</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+
+        <footer>
+            <div></div>
+        </footer>
     </main>
 
 
 </body>
 <script src="./Script/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </html>

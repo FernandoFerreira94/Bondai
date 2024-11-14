@@ -1,0 +1,270 @@
+@charset "UTF-8";
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 150px;
+  padding-top: 175px;
+}
+.title h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.title .month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.title .month-text {
+  position: absolute;
+  top: -40px;
+  right: -25px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.col {
+  width: 100%;
+  background: #fff;
+  padding: 80px 40px 30px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.col h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.col .preco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.col small {
+  font-size: 18px;
+  color: rgba(102, 102, 106, 0.7098039216);
+}
+.col .cifrao {
+  font-size: 35px;
+  margin-right: 10px;
+}
+.col .num {
+  font-size: 60px;
+  font-weight: bold;
+}
+.col .month-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-left: 5px;
+}
+.col .month-text .month-num {
+  font-size: 28px;
+}
+.col .bill {
+  font-size: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 10px;
+  border-bottom: 3px solid green;
+  width: 100%;
+}
+.col .checklist {
+  padding: 0;
+  margin: 30px 0;
+}
+.col .checklist li {
+  position: relative; /* Permite posicionamento absoluto do ícone */
+  padding-left: 24px; /* Espaço para o ícone de check */
+  margin-bottom: 15px; /* Espaço entre os itens */
+  font-size: 18px;
+}
+.col .checklist li::before {
+  content: "✓"; /* Código Unicode para o ícone de check */
+  position: absolute;
+  left: 0;
+  color: rgba(0, 178, 136, 0.8705882353); /* Cor do ícone de check */
+  font-weight: bold;
+  font-size: 22px;
+}
+.col .btn-free {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: auto;
+}
+.col .btn-free button {
+  width: 80%;
+  padding: 20px 30px;
+  font-size: 18px;
+}
+
+.text-custom {
+  text-align: center;
+  padding: 100px 0 60px 0;
+}
+
+.planos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 70px;
+  row-gap: 20px;
+}
+.planos .row-Plano {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 40px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.planos .info-plano {
+  width: 58%;
+  padding-left: 3%;
+}
+.planos .info-plano p {
+  color: rgba(102, 102, 106, 0.7098039216);
+  font-size: 18px;
+}
+.planos .info-plano a {
+  color: rgba(0, 178, 136, 0.8705882353);
+  font-size: 16px;
+  font-weight: bold;
+}
+.planos .info-plano a:hover span {
+  display: inline-block; /* Necessário para aplicar transformações */
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px); /* Desloca 10px para a direita */
+}
+.planos .info-plano a span {
+  display: inline-block; /* Necessário para aplicar transformações */
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.planos .info-plano span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.planos .valor-plano {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.planos .valor-plano span {
+  font-size: 50px;
+  font-weight: bold;
+}
+.planos .valor-plano p {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.business {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(133, 228, 228, 0.085);
+  margin: 100px 160px;
+  padding: 80px 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.business h1 {
+  font-size: 47px;
+}
+.business span {
+  color: rgba(0, 178, 136, 0.8705882353);
+}
+.business button {
+  margin-right: 10px;
+  padding: 15px 30px;
+}
+
+.frequently {
+  margin: 0 20%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.frequently a:hover {
+  color: rgba(0, 178, 136, 0.8705882353);
+}
+.frequently nav {
+  z-index: 0;
+}
+
+#navbarSupportedContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar li {
+  padding: 0 30px;
+}
+
+.dropdown-menu li {
+  padding: 20px 30px;
+  font-size: 20px;
+}

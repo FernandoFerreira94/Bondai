@@ -1,0 +1,256 @@
+
+//COR
+$btn: #00b288de;
+$btn2: #00b288;
+$preco: #66666ab5;
+$fundoDiv: rgba(133, 228, 228, 0.085);
+$new: #f8db62;
+$borda: 1px solid rgb(0, 0, 0, 0.1);
+
+// Main 
+//Titulo
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    padding-top: 175px;
+    h1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+    .month {
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+
+    .month-text {
+        position: absolute;
+        top: -40px;
+        right: -25px;
+    }
+}
+
+// conteudo
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+
+.col {
+    width: 100%;
+    background: #fff;
+    padding: 80px 40px 30px 40px;
+    border: $borda;
+    display: flex;
+    flex-direction: column;
+
+    // Montagem de PLANOS
+    h1 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .preco{
+        display: flex;
+    }
+
+    small {
+        font-size: 18px;
+        color: $preco;
+    }
+
+    .cifrao {
+        font-size: 35px;
+        margin-right: 10px;
+    }
+
+    .num {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    .month-text {
+        display: flex;
+        align-items: end;
+        margin-left: 5px;
+
+        .month-num {
+            font-size: 28px;
+        }
+
+    }
+
+    // msg faturado anualmente
+    .bill {
+        font-size: 21px;
+        display: flex;
+        justify-content: end;
+        margin-right: 10px;
+        border-bottom: 3px solid green;
+        width: 100%;
+    }
+
+    // LISTA DE PLANOS
+    .checklist {
+        padding: 0;
+        margin: 30px 0;
+
+      
+        li {
+            position: relative; /* Permite posicionamento absoluto do ícone */
+            padding-left: 24px; /* Espaço para o ícone de check */
+            margin-bottom: 15px; /* Espaço entre os itens */
+            font-size: 18px;
+        }   
+        
+         li::before {
+            content: "\2713"; /* Código Unicode para o ícone de check */
+            position: absolute;
+            left: 0;
+            color: $btn; /* Cor do ícone de check */
+            font-weight: bold;
+            font-size: 22px;
+        }
+    
+        
+    }
+
+    // div do botao de START FREE
+    .btn-free {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        button {
+            width: 80%;
+            padding: 20px 30px;
+            font-size: 18px;
+        }
+    }
+}
+
+.text-custom {
+    text-align: center;
+    padding: 100px 0 60px 0;
+}
+
+.planos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
+    row-gap: 20px;
+
+    .row-Plano {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        width: 100%;
+        padding: 40px 0;
+        border: $borda;
+    }
+
+    .info-plano {
+        width: 58%;
+        padding-left: 3%;
+        p {
+            color: $preco;
+            font-size: 18px;
+        }
+
+        a {
+            color: $btn;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        a:hover span {
+            display: inline-block; /* Necessário para aplicar transformações */
+             transform: translateX(8px); /* Desloca 10px para a direita */
+        }
+
+        a span {
+            display: inline-block; /* Necessário para aplicar transformações */
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        span {
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    }
+
+    .valor-plano{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 25%;
+        align-items: center;
+
+        span {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 35px;
+            font-weight: bold;
+        }
+    }
+}
+
+// div BUSSINESS
+.business {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $fundoDiv;
+    margin: 100px 160px;
+    padding: 80px 50px;
+    border: $borda;
+    h1 {
+        font-size: 47px;
+    }
+    span {
+        color: $btn;
+    }
+
+    button {
+        margin-right: 10px;
+        padding: 15px 30px;
+    }
+}
+
+.frequently {
+    margin: 0 20%;
+    border: $borda;
+    a:hover {
+        color: $btn;
+    }
+
+    nav {
+        z-index: 0;
+    }
+
+}
+
+#navbarSupportedContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar li {
+    padding: 0 30px;
+}
+
+.dropdown-menu li {
+    padding: 20px 30px;
+    font-size: 20px;
+}
+
+

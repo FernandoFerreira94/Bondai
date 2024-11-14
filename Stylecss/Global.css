@@ -1,5 +1,5 @@
 * {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: cursives;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -49,7 +49,6 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 20px 0;
-  border: 1px solid blue;
   z-index: 2;
   background: #fff;
 }
