@@ -89,28 +89,35 @@
 
         <div class="title">
             <h1 class="fs-1">Plans & Pricing</h1>
-
             <div class="month">
-                <Label class="fs-3">Monthy:   <input class="form-check-input" type="checkbox" value=""
-                        aria-label="Checkbox for following text input" id="checkBox" onclick="checkBox(this)">
-                    Yearly</Label>
-                <p class="month-text fs-5 text-success">2 Month free</p>
+                <div class="form-check">
+                    <input class="form-check-input" checked type="radio" onclick="main(this.id)" name="flexRadioDefault"
+                        id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Month
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" onclick="main(this.id)"
+                        id="flexRadioDefault2">
+                    <label class="form-check-label " for="flexRadioDefault2">
+                        Year <span class="text-success"> 2 months free</span>
+                    </label>
+                </div>
             </div>
         </div>
 
-        <div class="container">
-            <!-- Coluna 1-->
+        <div class="container" id="mainPrincipal">
             <div class="col col1">
                 <h1>Starter</h1>
                 <small>Ideal for freelance and contractors just starting out</small>
                 <div class="preco">
                     <span class="cifrao">$</span>
-                    <span class="num">17</span>
+                    <span class="num">24</span>
                     <div class="month-text">
                         <span class="month-num">/MONTH</span>
                     </div>
                 </div>
-                <span class="bill">Billed yearly</span>
 
                 <div class="list">
                     <ul class="checklist">
@@ -129,18 +136,19 @@
                 </div>
             </div>
 
-            <!-- Coluna 2-->
+
             <div class="col col2">
+                <div class="popular"><span>MOST POPULAR</span></div>
+
                 <h1>Professional</h1>
                 <small>Everything a growing independent business needs to thrive.</small>
                 <div class="preco">
                     <span class="cifrao">$</span>
-                    <span class="num">32</span>
+                    <span class="num">39</span>
                     <div class="month-text">
                         <span class="month-num">/MONTH</span>
                     </div>
                 </div>
-                <span class="bill">Billed yearly</span>
 
                 <div class="list">
                     <ul class="checklist">
@@ -160,18 +168,18 @@
                 </div>
             </div>
 
-            <!-- Coluna 3-->
+
             <div class="col col3">
                 <h1>Business</h1>
                 <small>The perfect package for small businesses and agencies.</small>
                 <div class="preco">
                     <span class="cifrao">$</span>
-                    <span class="num">52</span>
+                    <span class="num">79</span>
                     <div class="month-text">
                         <span class="month-num">/MONTH</span>
                     </div>
                 </div>
-                <span class="bill">Billed yearly</span>
+
 
                 <div class="list">
                     <ul class="checklist">
@@ -194,19 +202,15 @@
         <h1 class="text-custom">Customize your worflow with add-ons</h1>
 
         <!-- Planos e valores-->
-        <div class="planos">
-            <!--Plano 1-->
+        <div class="planos" id="planosSub">
             <div class="row-Plano">
                 <div class="info-plano">
-                    <h4>Accounting & Tax Assistant</h4>
-                    <p>Manage your freelance finances and always be ready for tax season with easy-to-use accounting and
-                        tax tools.</p>
-                    <a href="#">LEARN MORE <span> ></span></a>
+                    <h4>Collaborators</h4>
+                    <p>Invite other users to specific projects for limited access and functionality.</p>
                 </div>
 
                 <div class="valor-plano">
-                    <span>$100</span>
-                    <small>/YEAR</small>
+                    <span>$Free</span>
                 </div>
             </div>
 
@@ -218,22 +222,25 @@
                 </div>
 
                 <div class="valor-plano">
-                    <span>$90</span>
-                    <small>/YEAR</small>
+                    <span>$9</span>
+                    <small>/MONTH</small>
                 </div>
             </div>
 
             <!--Plano 3-->
             <div class="row-Plano">
                 <div class="info-plano">
-                    <h4>Collaborators</h4>
-                    <p>Invite other users to specific projects for limited access and functionality.</p>
+                    <h4>Bonsai Tax</h4>
+                    <p>Track expenses, identify write-offs, and estimate quarterly taxes easily.</p>
+                    <a href="#">LEARN MORE <span> ></span></a>
                 </div>
 
                 <div class="valor-plano">
-                    <p>Free</p>
+                    <p>$10</p>
+                    <small>/MONTH</small>
                 </div>
             </div>
+
         </div>
 
         <!--DIV BUSINESS-->
@@ -319,16 +326,239 @@
             </nav>
         </div>
 
-
-
         <footer>
-            <div></div>
+            <div class="container">
+
+                <!--Coluna 1 Footer-->
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Proposals</a></li>
+                        <li><a href="#">Contracts</a></li>
+                        <li><a href="#">Invoicing</a></li>
+                        <li><a href="#">Client CRM</a></li>
+                        <li><a href="#">Time Tracking</a></li>
+                        <li><a href="#">Task Tracking</a></li>
+                        <li><a href="#">Forms</a></li>
+                        <li><a href="#">Accounting</a></li>
+                        <li><a href="#">Bonsai Tax</a></li>
+                        <li><a href="#">Bonsai Cash</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" class="text-success fs-4">Pricing</a></li>
+                        <li><a href="#">Bonsai Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!--Coluna 2 Footer-->
+                <div class="footer-col">
+                    <ul>
+                        <h4>FREE Resources</h4>
+                        <li><a href="#">Freelance Resources</a></li>
+                        <li><a href="#">Freelance Blog by Bonsai</a></li>
+                        <li><a href="#">How to Write a Contract</a></li>
+                        <li><a href="#">Online Signature Maker</a></li>
+
+                        <li><a href="#">Self-Employed Taxes Hub</a></li>
+                        <li><a href="#">Self-Employed Tax Calculator</a></li>
+                        <li><a href="#">Self-Employed Tax Deductions</a></li>
+
+
+                        <h4>Templates</h4>
+
+
+
+                        <!--Template 1-->
+                        <div class="accordion" id="Invoice">
+                            <h5 type="button" data-bs-toggle="collapse" data-bs-target="#1">
+                                Invoice Templates <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJ5JREFUSEvtk9sNgCAMRS+b6CY6ipPoJuokruIoehNICKFQTEj8qD++6Dn0Njh0vlxnPkxQTdgi+n9EK4ATwC1sdQAwATikVkpDJnzz8DkjIXz3gkWSlAQEXG8h7+wglsRw/hu/dMCanITfw86LcC7UnINUQihzr8K1grQTvqvgLYJYwmcx83QWmojimjDw6gELC1oFarAJ1FHZDKpRPbjcGRnmtrrsAAAAAElFTkSuQmCC" />
+                            </h5>
+                            <div id="1" class=" collapse" data-bs-parent="#Invoice">
+                                <ul>
+                                    <li><a href="#">Invoice Generator</a></li>
+                                    <li><a href="#">Blank Invoice Template</a></li>
+                                    <li><a href="#">Consultant Invoice Template
+                                        </a></li>
+                                    <li><a href="#">Editable Invoice Template</a></li>
+                                    <li><a href="#">Graphic Design Invoice</a></li>
+                                    <li><a href="#">Web Design Invoice</a></li>
+                                    <li><a href="#"></a>Contractor Invoice Template</li>
+                                    <li><a href="#"></a>Photography Invoice Template</li>
+                                    <li><a href="#"></a>Self Employed Invoice Template</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--Template 2-->
+                        <div class="accordion" id="Proposal">
+                            <h5 type="button" data-bs-toggle="collapse" data-bs-target="#2">
+                                Proposal Templates
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJ5JREFUSEvtk9sNgCAMRS+b6CY6ipPoJuokruIoehNICKFQTEj8qD++6Dn0Njh0vlxnPkxQTdgi+n9EK4ATwC1sdQAwATikVkpDJnzz8DkjIXz3gkWSlAQEXG8h7+wglsRw/hu/dMCanITfw86LcC7UnINUQihzr8K1grQTvqvgLYJYwmcx83QWmojimjDw6gELC1oFarAJ1FHZDKpRPbjcGRnmtrrsAAAAAElFTkSuQmCC" />
+                            </h5>
+                            <div id="2" class=" collapse" data-bs-parent="#Proposal">
+                                <ul>
+                                    <li><a href="#">Website Proposal Template</a></li>
+                                    <li><a href="#">Digital Marketing Proposal</a></li>
+                                    <li><a href="#">Template
+                                        </a></li>
+                                    <li><a href="#">Social Media Marketing Proposal</a></li>
+                                    <li><a href="#">Graphic Design Proposal</a></li>
+                                    <li><a href="#">Freelance Proposal Template</a></li>
+                                    <li><a href="#"></a>SEO Proposal Template</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--Template 3-->
+                        <div class="accordion" id="Contract">
+                            <h5 type="button" data-bs-toggle="collapse" data-bs-target="#3">
+                                Contract Templates
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJ5JREFUSEvtk9sNgCAMRS+b6CY6ipPoJuokruIoehNICKFQTEj8qD++6Dn0Njh0vlxnPkxQTdgi+n9EK4ATwC1sdQAwATikVkpDJnzz8DkjIXz3gkWSlAQEXG8h7+wglsRw/hu/dMCanITfw86LcC7UnINUQihzr8K1grQTvqvgLYJYwmcx83QWmojimjDw6gELC1oFarAJ1FHZDKpRPbjcGRnmtrrsAAAAAElFTkSuQmCC" />
+                            </h5>
+                            <div id="3" class=" collapse" data-bs-parent="#Contract">
+                                <ul>
+                                    <li><a href="#">Online Contract</a></li>
+                                    <li><a href="#">Graphic Design Contract</a></li>
+                                    <li><a href="#">Freelance Contract Template
+                                        </a></li>
+                                    <li><a href="#">Social Media Marketing Contract</a></li>
+                                    <li><a href="#">Software Development Contract</a></li>
+                                    <li><a href="#">Web Design Contract</a></li>
+                                    <li><a href="#"></a>Video Production Contract</li>
+                                    <li><a href="#"></a>Public Relations Contract</li>
+                                    <li><a href="#"></a>Translation Contract</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--Template 4-->
+                        <div class="accordion" id="Agreement">
+                            <h5 type="button" data-bs-toggle="collapse" data-bs-target="#4">
+                                Agreement Templates
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJ5JREFUSEvtk9sNgCAMRS+b6CY6ipPoJuokruIoehNICKFQTEj8qD++6Dn0Njh0vlxnPkxQTdgi+n9EK4ATwC1sdQAwATikVkpDJnzz8DkjIXz3gkWSlAQEXG8h7+wglsRw/hu/dMCanITfw86LcC7UnINUQihzr8K1grQTvqvgLYJYwmcx83QWmojimjDw6gELC1oFarAJ1FHZDKpRPbjcGRnmtrrsAAAAAElFTkSuQmCC" />
+                            </h5>
+                            <div id="4" class=" collapse" data-bs-parent="#Agreement">
+                                <ul>
+                                    <li><a href="#">Invoice Generator</a></li>
+                                    <li><a href="#">Blank Invoice Template</a></li>
+                                    <li><a href="#">Consultant Invoice Template
+                                        </a></li>
+                                    <li><a href="#">Editable Invoice Template</a></li>
+                                    <li><a href="#">Graphic Design Invoice</a></li>
+                                    <li><a href="#">Web Design Invoice</a></li>
+                                    <li><a href="#"></a>Contractor Invoice Template</li>
+                                    <li><a href="#"></a>Photography Invoice Template</li>
+                                    <li><a href="#"></a>Self Employed Invoice Template</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--Template 5-->
+                        <div class="accordion" id="Scope">
+                            <h5 type="button" data-bs-toggle="collapse" data-bs-target="#5">
+                                Scope of Work Templates
+
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJ5JREFUSEvtk9sNgCAMRS+b6CY6ipPoJuokruIoehNICKFQTEj8qD++6Dn0Njh0vlxnPkxQTdgi+n9EK4ATwC1sdQAwATikVkpDJnzz8DkjIXz3gkWSlAQEXG8h7+wglsRw/hu/dMCanITfw86LcC7UnINUQihzr8K1grQTvqvgLYJYwmcx83QWmojimjDw6gELC1oFarAJ1FHZDKpRPbjcGRnmtrrsAAAAAElFTkSuQmCC" />
+                            </h5>
+                            <div id="5" class=" collapse" data-bs-parent="#Scope">
+                                <ul>
+                                    <li><a href="#">Invoice Generator</a></li>
+                                    <li><a href="#">Blank Invoice Template</a></li>
+                                    <li><a href="#">Consultant Invoice Template
+                                        </a></li>
+                                    <li><a href="#">Editable Invoice Template</a></li>
+                                    <li><a href="#">Graphic Design Invoice</a></li>
+                                    <li><a href="#">Web Design Invoice</a></li>
+                                    <li><a href="#"></a>Contractor Invoice Template</li>
+                                    <li><a href="#"></a>Photography Invoice Template</li>
+                                    <li><a href="#"></a>Self Employed Invoice Template</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--Template 6-->
+                        <div class="accordion" id="Quote">
+                            <h5 type="button" data-bs-toggle="collapse" data-bs-target="#6">
+                                Quote Templates
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJ5JREFUSEvtk9sNgCAMRS+b6CY6ipPoJuokruIoehNICKFQTEj8qD++6Dn0Njh0vlxnPkxQTdgi+n9EK4ATwC1sdQAwATikVkpDJnzz8DkjIXz3gkWSlAQEXG8h7+wglsRw/hu/dMCanITfw86LcC7UnINUQihzr8K1grQTvqvgLYJYwmcx83QWmojimjDw6gELC1oFarAJ1FHZDKpRPbjcGRnmtrrsAAAAAElFTkSuQmCC" />
+                            </h5>
+                            <div id="6" class=" collapse" data-bs-parent="#Quote">
+                                <ul>
+                                    <li><a href="#">Invoice Generator</a></li>
+                                    <li><a href="#">Blank Invoice Template</a></li>
+                                    <li><a href="#">Consultant Invoice Template
+                                        </a></li>
+                                    <li><a href="#">Editable Invoice Template</a></li>
+                                    <li><a href="#">Graphic Design Invoice</a></li>
+                                    <li><a href="#">Web Design Invoice</a></li>
+                                    <li><a href="#"></a>Contractor Invoice Template</li>
+                                    <li><a href="#"></a>Photography Invoice Template</li>
+                                    <li><a href="#"></a>Self Employed Invoice Template</li>
+                                </ul>
+                            </div>
+
+                            <li><a href="#">Credit Note Templates</a></li>
+                            <li><a href="#">Estimate Templates</a></li>
+                            <li><a href="#">Form Templates</a></li>
+                    </ul>
+                </div>
+
+                <!--Coluna 3 Footer-->
+                <div class="footer-col">
+                    <h4>Bonsai</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Legal</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#">Afilliates</a></li>
+                        <li><a href="#">Write or Us</a></li>
+                    </ul>
+
+                    <ul>
+                        <div class="accordion" id="Comparisons">
+                            <h5 type="button" data-bs-toggle="collapse" data-bs-target="#6">
+                                Comparisons
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJ5JREFUSEvtk9sNgCAMRS+b6CY6ipPoJuokruIoehNICKFQTEj8qD++6Dn0Njh0vlxnPkxQTdgi+n9EK4ATwC1sdQAwATikVkpDJnzz8DkjIXz3gkWSlAQEXG8h7+wglsRw/hu/dMCanITfw86LcC7UnINUQihzr8K1grQTvqvgLYJYwmcx83QWmojimjDw6gELC1oFarAJ1FHZDKpRPbjcGRnmtrrsAAAAAElFTkSuQmCC" />
+                            </h5>
+                            <div id="6" class=" collapse" data-bs-parent="#Comparisons">
+                                <ul>
+                                    <li><a href="#">Freshbooks Alternatives</a></li>
+                                    <li><a href="#">Quickbooks Alternatives</a></li>
+                                    <li><a href="#">Wave vs Quickbooks
+                                        </a></li>
+                                    <li><a href="#">Xero vs Quickbooks</a></li>
+                                    <li><a href="#">Freshbooks vs Quickbooks</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+
         </footer>
     </main>
 
 
 </body>
 <script src="./Script/index.js"></script>
+<script src="./Script/planos.js"></script>
+<script type="module" src="."></script>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

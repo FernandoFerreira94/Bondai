@@ -20,14 +20,14 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.title .month-text {
-  position: absolute;
-  top: -40px;
-  right: -25px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 22px;
 }
 
 .container {
@@ -44,7 +44,7 @@
 .col {
   width: 100%;
   background: #fff;
-  padding: 80px 40px 30px 40px;
+  padding: 80px 60px 30px 40px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,6 +53,31 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.col .popular {
+  background: rgba(0, 178, 136, 0.8705882353);
+  padding: 12px 25px;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 0;
+  position: absolute;
+  top: 55px;
+  right: -80px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+.col .popular span {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 .col h1 {
   font-size: 35px;
@@ -68,11 +93,12 @@
   color: rgba(102, 102, 106, 0.7098039216);
 }
 .col .cifrao {
-  font-size: 35px;
+  font-size: 40px;
   margin-right: 10px;
+  margin-top: 10px;
 }
 .col .num {
-  font-size: 60px;
+  font-size: 65px;
   font-weight: bold;
 }
 .col .month-text {
@@ -82,7 +108,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .col .month-text .month-num {
   font-size: 28px;

@@ -23,14 +23,12 @@ $borda: 1px solid rgb(0, 0, 0, 0.1);
     .month {
         display: flex;
         position: relative;
-        align-items: center;
+        align-items: start;
+        flex-direction: column;
+        font-size: 22px;
     }
 
-    .month-text {
-        position: absolute;
-        top: -40px;
-        right: -25px;
-    }
+
 }
 
 // conteudo
@@ -42,13 +40,36 @@ $borda: 1px solid rgb(0, 0, 0, 0.1);
 }
 
 
+
+
 .col {
     width: 100%;
     background: #fff;
-    padding: 80px 40px 30px 40px;
+    padding: 80px 60px 30px 40px;
     border: $borda;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+    .popular {
+        background: $btn;
+        padding: 12px 25px;
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        z-index: 0;
+        position: absolute;
+        top: 55px;
+        right: -80px;
+        transform: rotate(50deg);
+        span{
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+    }
 
     // Montagem de PLANOS
     h1 {
@@ -66,19 +87,20 @@ $borda: 1px solid rgb(0, 0, 0, 0.1);
     }
 
     .cifrao {
-        font-size: 35px;
+        font-size: 40px;
         margin-right: 10px;
+        margin-top: 10px;
     }
 
     .num {
-        font-size: 60px;
+        font-size: 65px;
         font-weight: bold;
     }
 
     .month-text {
         display: flex;
         align-items: end;
-        margin-left: 5px;
+        margin-left: 10px;
 
         .month-num {
             font-size: 28px;

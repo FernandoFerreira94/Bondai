@@ -1,4 +1,43 @@
-footer div {
-  padding-top: 200px;
-  border: 1px solid red;
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+footer .container {
+  padding: 80px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+footer .footer-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer-col li {
+  margin: 8px 0;
+}
+footer .footer-col a {
+  font-size: 19px;
+  color: rgba(102, 102, 106, 0.7098039216);
+  text-decoration: none;
+}
+footer .footer-col a:hover, footer .footer-col h5:hover {
+  color: #66666a;
+}
+footer .footer-col h5 {
+  color: rgba(102, 102, 106, 0.7098039216);
+}
+footer .footer-col h4 {
+  margin: 30px 0;
 }
